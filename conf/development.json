@@ -1,0 +1,17 @@
+{
+  "app": {
+    "port": 8080
+  },
+  "swagger": {
+    "swaggerDefinition": {
+      "info": {
+        "title": "Recruity API"
+      },
+      "host": "localhost:8080",
+      "basePath": "/"
+    },
+    "apis": [
+      "src/**/*"
+    ]
+  }
+}

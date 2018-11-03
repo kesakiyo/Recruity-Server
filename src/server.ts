@@ -1,8 +1,10 @@
 import app from './app';
 
+import conf from './conf';
+
 // Start Express Server
-const server = app.listen('8080', () => {
-  console.log('App is running at http://localhost:8080 in development mode');
+const server = app.listen(conf.app.port, () => {
+  console.log(`App is running at http://localhost:${conf.app.port} in development mode`);
   console.log('Press CTRL-C to stop');
 });
 
