@@ -1,5 +1,4 @@
 import app from './app';
-
 import conf from './conf';
 
 // Start Express Server

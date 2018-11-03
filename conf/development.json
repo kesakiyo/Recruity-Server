@@ -11,7 +11,7 @@
       "basePath": "/"
     },
     "apis": [
-      "src/**/*"
+      "src/controllers/*"
     ]
   }
 }

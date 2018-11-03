@@ -3,6 +3,7 @@ import * as swaggerUiExpress from 'swagger-ui-express';
 import swaggerJSDoc = require('swagger-jsdoc');
 
 import conf from './conf';
+import healthRouter from './routers/health-router';
 
 // Create Express server;
 const app = express();
@@ -15,16 +16,10 @@ app.use(
 
 /**
  * @swagger
- * /:
- *  get:
- *    summary: Test api
- *    description: Test api desc
- *    responses:
- *      200:
- *        good
+ * tags:
+ *  name: health
+ *  description: RestAPI 테스트
  */
-app.get('/', (req, res, next) => {
-  res.send('hello world!!!!');
-});
+app.use('/health', healthRouter);
 
 export default app;
