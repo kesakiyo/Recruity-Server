@@ -5,6 +5,8 @@ import swaggerJSDoc = require('swagger-jsdoc');
 import conf from './conf';
 import healthRouter from './routers/health-router';
 
+import './models';
+
 // Create Express server;
 const app = express();
 
