@@ -11,7 +11,8 @@
       "basePath": "/"
     },
     "apis": [
-      "src/controllers/*"
+      "src/models/**/*.ts",
+      "src/controllers/**/*.ts"
     ]
   }
 }
